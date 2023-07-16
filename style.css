@@ -1,0 +1,116 @@
+/* Google fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap');
+
+/* Global styles */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Common styles to share */
+.default-margin {
+  margin-top: 64px;
+  margin-left: 96px;
+  margin-right: 96px;
+}
+
+
+.common-header-large {
+  color: #3A3A3A;
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 70px;
+  /* 134.615% */
+}
+
+.common-header-avg {
+  color: #3A3A3A;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 70px;
+  /* 250% */
+}
+
+.common-header-small {
+  color: #3A3A3A;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.common-btn {
+  display: inline-flex;
+  padding: 10px 24px;
+  align-items: flex-start;
+  gap: 8px;
+  border-radius: 41px;
+  border: none;
+  background: #E02C6D;
+  color: #FFF;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+/* Header Navbar starts */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  gap: 24px;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul a {
+  text-decoration: none;
+  color: #3A3A3A;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+/* Header Banner starts */
+.banner-container {
+  margin-top: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.banner-img {
+  background-image: url('images/Circle-design.svg');
+  padding: 8px;
+}
+
+.banner-contents h1,
+.banner-contents p {
+  margin-bottom: 20px;
+}
+
+/* Logos section starts */
+
+.logo-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo {
+  padding: 8px;
+}
