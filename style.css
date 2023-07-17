@@ -116,6 +116,10 @@ nav ul a {
   padding: 4px;
 }
 
+.banner-img img {
+  width: 100%;
+}
+
 .banner-contents h1,
 .banner-contents p {
   margin-bottom: 20px;
@@ -137,6 +141,9 @@ nav ul a {
   padding: 8px;
 }
 
+.logo img {
+  width: 100%;
+}
 
 .collection-sec>h3 {
   text-align: center;
@@ -147,8 +154,12 @@ nav ul a {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 16px;
-  grid-template-rows: max-content;
+  /* grid-template-rows: max-content; */
   justify-content: center;
+}
+
+.collection-cards-container img {
+  width: 100%;
 }
 
 .collection-card {
@@ -192,11 +203,9 @@ footer {
 /* Responsible media query styles*/
 
 @media screen and (max-width: 576px) {
-
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  .default-margin {
+    margin-left: 16px;
+    margin-right: 16px;
   }
 
   .responsible-special-hidden {
@@ -207,7 +216,6 @@ footer {
     display: inline-flex;
   }
 
-
   .banner-container,
   .collection-cards-container,
   .featured-container {
@@ -215,7 +223,22 @@ footer {
     flex-direction: column;
   }
 
+  .banner-container {
+    flex-direction: column-reverse;
+  }
+
   .collection-cards-container {
     display: block;
+  }
+
+  .logo-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-around;
+    text-align: center;
+    border-top: 1px solid black;
+    ;
+    border-bottom: 1px solid black;
+    ;
   }
 }
