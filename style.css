@@ -88,6 +88,13 @@ nav ul a {
   line-height: normal;
 }
 
+.nav-ul-imgs-container {
+  display: flex;
+  justify-content: flex-end;
+  gap: 24px;
+  align-items: center;
+}
+
 /* Header Banner starts */
 .banner-container {
   margin-top: 32px;
@@ -104,8 +111,9 @@ nav ul a {
 
 .banner-img {
   background-image: url('images/Circle-design.svg');
-  background-position: center;
-  padding: 8px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 4px;
 }
 
 .banner-contents h1,
@@ -184,9 +192,6 @@ footer {
 /* Responsible media query styles*/
 
 @media screen and (max-width: 576px) {
-  .responsible-special-show {
-    display: block;
-  }
 
   .navbar {
     display: flex;
@@ -197,6 +202,11 @@ footer {
   .responsible-special-hidden {
     display: none;
   }
+
+  .responsible-special-show {
+    display: inline-flex;
+  }
+
 
   .banner-container,
   .collection-cards-container,
