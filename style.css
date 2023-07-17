@@ -185,10 +185,27 @@ footer {
 
 @media screen and (max-width: 576px) {
   .responsible-special-show {
-    display: inline;
+    display: block;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
   .responsible-special-hidden {
     display: none;
+  }
+
+  .banner-container,
+  .collection-cards-container,
+  .featured-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .collection-cards-container {
+    display: block;
   }
 }
