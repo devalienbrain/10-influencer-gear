@@ -99,7 +99,7 @@ nav ul a {
 }
 
 .responsible-special-show {
-  display: hidden;
+  display: none;
 }
 
 .banner-img {
@@ -179,4 +179,16 @@ footer {
   background: #0A0826;
   text-align: center;
   padding: 32px 8px;
+}
+
+/* Responsible media query styles*/
+
+@media screen and (max-width: 576px) {
+  .responsible-special-show {
+    display: inline;
+  }
+
+  .responsible-special-hidden {
+    display: none;
+  }
 }
